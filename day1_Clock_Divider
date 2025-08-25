@@ -1,0 +1,51 @@
+module day1_Clock_Divider(
+input clk,reset,
+output reg clk_div_by_2, clk_div_by_4, clk_div_by_8, clk_div_by_16
+    );
+
+reg [3:0] count;
+
+always @(posedge clk)
+begin 
+if (reset) 
+count <= 4'b0000;
+else
+count <= count + 1;
+clk_div_by_2 <= count[0];
+clk_div_by_4 <= count[1];
+clk_div_by_8 <= count[2];
+clk_div_by_16 <= count[3];
+end
+endmodule
+
+  -------------------------------------------------------------------
+
+  module tb_day1_Clock_Divider;
+  reg clk;
+  reg reset;
+  wire clk_div_by_2, clk_div_by_4, clk_div_by_8;
+
+  day1_Clock_Divider uut (
+    .clk(clk),
+    .reset(reset),
+    .clk_div_by_2(clk_div_by_2),
+    .clk_div_by_4(clk_div_by_4),
+    .clk_div_by_8(clk_div_by_8),
+    .clk_div_by_16(clk_div_by_16)
+  );
+  // Clock generation: 10ns period (100 MHz)
+  initial begin
+    clk = 0;
+    forever #5 clk = ~clk; 
+  end
+  initial begin
+    reset = 1;
+    #20;
+    reset = 0;
+    #200;
+    reset = 1;
+    #15;
+    reset = 0;
+    #200;
+  end
+endmodule
