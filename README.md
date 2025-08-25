@@ -1,1 +1,45 @@
-# 50_days_Verilog
+# 50 days Verilog training
+Day 1 - Clock Divider
+Day 2 -Johnson Counter
+Day 3 -Ring Counter
+Day 4 -5 Input Majority
+Day 5 -Parity Generator
+Day 6 -Binary to One-Hot Encoder
+Day 7 -4-Bit Carry Lookahead Adder
+Day 8 -n-Bit Comparator
+Day 9 -SISO Shift Register
+Day 10 -SIPO 
+Day 11 -PIPO 
+Day 12 -PISO
+Day 13 -PRBS Sequence Generator
+Day 14 -8-Bit Adder/Subtractor 
+Day 15 -4-Bit Multiplier
+Day 16 -Fixed Point Division
+Day 17 -Master Slave JK Flip Flop
+Day 18 -Positive Edge Detector
+Day 19 -BCD Adder
+Day 20 -Decoder
+Day 21 -Moore FSM 1010 Sequence Detector
+Day 22 -N:1 MUX
+Day 23 -D Latch Using 2:1 MUX
+Day 24 -8-Bit Barrel Shifter
+Day 25 -1-Bit Comparator Using 4x1 MUX
+Day 26 -Logical, Algebric, and Rotate Shift Operations
+Day 27 -4-Bit Asynchronous Down Counter
+Day 28 -Mod-n Updown Counter
+Day 29 -URAT Protocol
+Day 30 -Universal Binary Counter
+Day 31 -Universal Shift Register
+Day 32 -Greatest Common Divisor using Behavioural Modeling
+Day 33 -Greatest Common Divisor Via FSM
+Day 34 -Single Port RAM
+Day 35 -Dual Port RAM
+Day 36 -Clock Buffer
+Day 37 -Synchronous FIFO
+Day 38 -Priority Encoder
+Day 39 -Serial Adder
+Day 40 -Fixed Priority Arbiter
+Day 42 -Round Robin Arbiter
+Day 43 -Grey to Binary Converter
+Day 44 -Binary to Grey Converter
+Day 45 -SR Latch Using NOR Gates
