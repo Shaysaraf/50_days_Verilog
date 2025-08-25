@@ -1,0 +1,50 @@
+module Day4_5_Input_Majority(
+    input [4:0] X,
+    output Majority
+);   
+    wire [7:0] Y;
+
+    assign Y[0] = X[0] & X[1] & X[2];
+    assign Y[1] = X[0] & X[1] & X[3];
+    assign Y[2] = X[0] & X[1] & X[4];
+    assign Y[3] = X[0] & X[2] & X[3];
+    assign Y[4] = X[0] & X[2] & X[4];
+    assign Y[5] = X[1] & X[2] & X[3];
+    assign Y[6] = X[1] & X[2] & X[4];
+    assign Y[7] = X[2] & X[3] & X[4];
+
+    assign Majority = |Y;
+
+endmodule
+
+-------------------------------------------------------------------------------
+
+module tb_Day4_5_Input_Majority;
+
+    reg [4:0] X;
+    wire Majority;
+
+    Day4_5_Input_Majority uut (
+        .X(X),
+        .Majority(Majority)
+    );
+
+    initial begin
+
+        X = 5'b00000; #10;
+        X = 5'b00001; #10;
+        X = 5'b00011; #10;
+        X = 5'b00111; #10;
+        X = 5'b01111; #10;
+        X = 5'b11111; #10;
+        X = 5'b10011; #10;
+        X = 5'b01011; #10;
+        X = 5'b10001; #10;
+        X = 5'b10000; #10;
+        X = 5'b01010; #10;
+        X = 5'b00100; #10;
+    $finish;
+    end
+
+
+endmodule
