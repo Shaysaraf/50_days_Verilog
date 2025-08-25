@@ -1,0 +1,31 @@
+module Day6_Binary_to_OneHot_Encoder(
+    input [3:0] binary,
+    output [15:0] onehot
+);
+
+    // Shift 1 by the binary value to get one-hot
+    assign onehot = 16'b1 << binary;
+
+endmodule
+
+----------------------------------------------------------------------------
+
+module tb_Day6_Binary_to_OneHot_Encoder;
+
+    reg [3:0] binary;
+    wire [15:0] onehot;
+
+    Day6_Binary_to_OneHot_Encoder uut (
+        .binary(binary),
+        .onehot(onehot)
+    );
+
+    integer i;
+    initial begin
+        for (i = 0; i < 16; i = i + 1) begin
+            binary = i;
+            #10;  // wait 10 ns
+        end
+        $finish;
+    end
+endmodule
