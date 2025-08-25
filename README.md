@@ -2,7 +2,7 @@
 
 - [x] **Day 1** - Clock Divider  
 - [x] **Day 2** - Johnson Counter  
-- [ ] **Day 3** - Ring Counter  
+- [x] **Day 3** - Ring Counter  
 - [ ] **Day 4** - 5 Input Majority  
 - [ ] **Day 5** - Parity Generator  
 - [ ] **Day 6** - Binary to One-Hot Encoder  
