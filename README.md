@@ -5,7 +5,7 @@
 - [x] **Day 3** - Ring Counter  
 - [x] **Day 4** - 5 Input Majority  
 - [x] **Day 5** - Parity Generator  
-- [ ] **Day 6** - Binary to One-Hot Encoder  
+- [x] **Day 6** - Binary to One-Hot Encoder  
 - [ ] **Day 7** - 4-Bit Carry Lookahead Adder  
 - [ ] **Day 8** - n-Bit Comparator  
 - [ ] **Day 9** - SISO Shift Register  
