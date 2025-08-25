@@ -1,7 +1,7 @@
 # 50 Days of Verilog Training
 
 - [x] **Day 1** - Clock Divider  
-- [ ] **Day 2** - Johnson Counter  
+- [x] **Day 2** - Johnson Counter  
 - [ ] **Day 3** - Ring Counter  
 - [ ] **Day 4** - 5 Input Majority  
 - [ ] **Day 5** - Parity Generator  
