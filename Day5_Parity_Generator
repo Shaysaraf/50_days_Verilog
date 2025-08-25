@@ -1,0 +1,34 @@
+module Day5_Parity_Generator(
+input [7:0] X,
+output Odd_Parity
+    );
+assign Odd_Parity = ^X;    
+endmodule
+
+-------------------------------------------------------------------
+
+module tb_Day5_Parity_Generator;
+    reg [7:0] X;
+    wire Odd_Parity;
+
+    Day5_Parity_Generator uut (
+        .X(X),
+        .Odd_Parity(Odd_Parity)
+    );
+
+    initial begin
+        X = 8'b00000000; #10;
+        X = 8'b00001000; #10;
+        X = 8'b00011000; #10;
+        X = 8'b00111000; #10;
+        X = 8'b01111001; #10;
+        X = 8'b11111001; #10;
+        X = 8'b10011110; #10;
+        X = 8'b01011001; #10;
+        X = 8'b10001010; #10;
+        X = 8'b10000110; #10;
+        X = 8'b01010001; #10;
+        X = 8'b00100111; #10;
+    $finish;
+    end
+endmodule
