@@ -9,9 +9,9 @@
 - [ ] **Day 7** - 4-Bit Carry Lookahead Adder  
 - [ ] **Day 8** - n-Bit Comparator  
 - [ ] **Day 9** - SISO Shift Register  
-- [ ] **Day 10** - SIPO  
-- [ ] **Day 11** - PIPO  
-- [ ] **Day 12** - PISO  
+- [ ] **Day 10** - SIPO Shift Register  
+- [ ] **Day 11** - PIPO Shift Register  
+- [ ] **Day 12** - PISO Shift Register  
 - [ ] **Day 13** - PRBS Sequence Generator  
 - [ ] **Day 14** - 8-Bit Adder/Subtractor  
 - [ ] **Day 15** - 4-Bit Multiplier  
@@ -19,8 +19,8 @@
 - [ ] **Day 17** - Master Slave JK Flip Flop  
 - [ ] **Day 18** - Positive Edge Detector  
 - [ ] **Day 19** - BCD Adder  
-- [ ] **Day 20** - Decoder  
-- [ ] **Day 21** - Moore FSM 1010 Sequence Detector  
+- [ ] **Day 20** - Moore FSM 1010 Sequence Detector
+- [ ] **Day 21** - Meely FSM 1010 Sequence Detector  
 - [ ] **Day 22** - N:1 MUX  
 - [ ] **Day 23** - D Latch Using 2:1 MUX  
 - [ ] **Day 24** - 8-Bit Barrel Shifter  
