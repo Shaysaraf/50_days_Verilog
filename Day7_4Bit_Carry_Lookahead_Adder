@@ -39,7 +39,6 @@ module tb_Day7_4Bit_Carry_Lookahead_Adder;
     wire [3:0] S;
     wire Cout;
 
-    // Instantiate the DUT
     Day7_4Bit_Carry_Lookahead_Adder dut (
         .A(A),
         .B(B),
