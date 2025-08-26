@@ -1,0 +1,38 @@
+
+module Day8_N_Bit_Comparator#(
+parameter N = 16
+)(
+input [N-1:0] A, B,
+output LessThan, Equal, BiggerThan 
+    );
+    assign LessThan = (A < B);
+    assign Equal = (A == B);
+    assign BiggerThan = (A > B);   
+endmodule
+
+--------------------------------------------------------------------------------------
+
+module tb_Day8_N_Bit_Comparator;
+    parameter N = 4;  
+    reg [N-1:0] A, B;
+    wire LessThan, Equal, BiggerThan;
+    Day8_N_Bit_Comparator #(.N(N)) dut (
+        .A(A),
+        .B(B),
+        .LessThan(LessThan),
+        .Equal(Equal),
+        .BiggerThan(BiggerThan)
+    );
+    integer i, j;
+    initial begin
+        for (i = 0; i < 2**N; i = i + 1) begin
+            for (j = 0; j < 2**N; j = j + 1) begin
+                A = i;
+                B = j;
+                #10;
+            end
+        end
+        $finish;
+    end
+
+endmodule
