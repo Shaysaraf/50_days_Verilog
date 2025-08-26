@@ -7,7 +7,7 @@
 - [x] **Day 5** - Parity Generator  
 - [x] **Day 6** - Binary to One-Hot Encoder  
 - [x] **Day 7** - 4-Bit Carry Lookahead Adder  
-- [ ] **Day 8** - N-Bit Comparator  
+- [x] **Day 8** - N-Bit Comparator  
 - [ ] **Day 9** - SISO Shift Register  
 - [ ] **Day 10** - SIPO Shift Register  
 - [ ] **Day 11** - PIPO Shift Register  
